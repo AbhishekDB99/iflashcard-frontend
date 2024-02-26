@@ -1,0 +1,39 @@
+.example-section {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.example-section {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  height: 60px;
+  padding: 60px;  /* Adding padding around elements within the section */
+}
+
+.card-container {
+  perspective: 800px;
+  position: relative;
+}
+
+.card-front, .card-back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.8s;
+}
+
+.card-back { /* Initially hide the back side */
+  transform: rotateY(180deg);
+}
+
+.card-container.flipped .card-front {
+  transform: rotateY(180deg);
+}
+
+.card-container.flipped .card-back {
+  transform: rotateY(0deg);
+}
