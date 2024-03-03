@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonService } from '../services/common.service';
 
 @Component({
   selector: 'app-card',
@@ -8,18 +9,27 @@ import { Component, OnInit } from '@angular/core';
 export class CardComponent implements OnInit {
   isFlipped: any = true;
   color: any;
-  questionArray: any[] = [
-    { que: 'Why?', ans: 'no idea' },
-    { que: 'Then?', ans: 'lets see' },
-    { que: 'Okay?', ans: 'yup' },
-  ];
+  flashCards: any;
 
-  constructor() {}
+  constructor(private commonService: CommonService) {}
 
   ngOnInit(): void {
     this.color = 'blue';
+    this.getAllFlashCards();
   }
-  flipCard() {
-    this.isFlipped = !this.isFlipped;
+  flipCard(index: any) {
+    // this.isFlipped = !this.isFlipped;
+    this.flashCards[index].isFlipped = !this.flashCards[index].isFlipped;
+    console.log(index, this.flashCards);
+  }
+
+  getAllFlashCards() {
+    this.commonService.getAllFlashCards().subscribe((res: any) => {
+      this.flashCards = res.data.cards.map((card: any) => ({
+        ...card,
+        isFlipped: false,
+      }));
+      console.log(res.data);
+    });
   }
 }

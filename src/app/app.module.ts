@@ -10,6 +10,8 @@ import { LoginComponent } from './login/login.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
+import { HttpClientModule } from '@angular/common/http';
+import { HeaderModule } from '@coreui/angular';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { MatCardModule } from '@angular/material/card';
     MatSlideToggleModule,
     MatCardModule,
     MatButtonModule,
+    HttpClientModule,
+    HeaderModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
