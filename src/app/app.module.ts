@@ -12,6 +12,12 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { HttpClientModule } from '@angular/common/http';
 import { HeaderModule } from '@coreui/angular';
+import {
+  NavModule,
+  NavbarModule,
+  DropdownModule,
+  ContainerComponent,
+} from '@coreui/angular';
 
 @NgModule({
   declarations: [
@@ -29,6 +35,10 @@ import { HeaderModule } from '@coreui/angular';
     MatButtonModule,
     HttpClientModule,
     HeaderModule,
+    NavModule,
+    NavbarModule,
+    DropdownModule,
+    ContainerComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -20,7 +20,6 @@ export class CardComponent implements OnInit {
   flipCard(index: any) {
     // this.isFlipped = !this.isFlipped;
     this.flashCards[index].isFlipped = !this.flashCards[index].isFlipped;
-    console.log(index, this.flashCards);
   }
 
   getAllFlashCards() {
@@ -29,7 +28,6 @@ export class CardComponent implements OnInit {
         ...card,
         isFlipped: false,
       }));
-      console.log(res.data);
     });
   }
 }
