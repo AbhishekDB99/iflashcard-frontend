@@ -12,11 +12,12 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { HttpClientModule } from '@angular/common/http';
 import { HeaderModule } from '@coreui/angular';
+import '@angular/compiler';
 import {
   NavModule,
   NavbarModule,
   DropdownModule,
-  ContainerComponent,
+  // ContainerComponent,
 } from '@coreui/angular';
 
 @NgModule({
@@ -38,7 +39,7 @@ import {
     NavModule,
     NavbarModule,
     DropdownModule,
-    ContainerComponent,
+    // ContainerComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],
