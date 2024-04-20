@@ -31,31 +31,29 @@
     </mat-slide-toggle>
   </section>
 </div> -->
-
-<div
-  style="background-color: black; color: aliceblue"
-  *ngFor="let item of questionArray"
->
-  <p>Card works</p>
-  <div class="card-container" [class.flipped]="!isFlipped">
-    <mat-card class="example-card card-front" style="background-color: orange">
-      <mat-card-content>
-        <p>{{ item.que }}</p>
-      </mat-card-content>
-    </mat-card>
-    <mat-card class="example-card card-back" style="background-color: red">
-      <mat-card-content>
-        <p>{{ item.ans }}</p>
-      </mat-card-content>
-    </mat-card>
+<div class="container card-container-main">
+  <div class="main-card-div" *ngFor="let item of flashCards; let i = index">
+    <p>Card {{ i + 1 }}</p>
+    <div class="card-container" [class.flipped]="item.isFlipped">
+      <mat-card class="example-card card-front">
+        <mat-card-content>
+          <p>{{ item.question }}</p>
+        </mat-card-content>
+      </mat-card>
+      <mat-card class="example-card card-back">
+        <mat-card-content>
+          <p>{{ item.answer }}</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <section class="example-section">
+      <mat-slide-toggle
+        class="example-margin"
+        [color]="color"
+        (click)="flipCard(i)"
+      >
+        Flip!!
+      </mat-slide-toggle>
+    </section>
   </div>
-  <section class="example-section">
-    <mat-slide-toggle
-      class="example-margin"
-      [color]="color"
-      (click)="flipCard()"
-    >
-      Flip!!
-    </mat-slide-toggle>
-  </section>
 </div>

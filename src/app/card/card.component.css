@@ -1,3 +1,18 @@
+.card-container-main{
+  padding-left: 10px;
+}
+
+.main-card-div{
+padding: 20px;
+/* border-color: aliceblue; */
+/* border-radius: 10px; */
+/* border-width: 10px; */
+background-color: black;
+color: aliceblue;
+display: inline-block;
+width: 45%;
+margin: 5px;
+}
 .example-section {
   display: flex;
   align-content: center;
@@ -16,14 +31,25 @@
 .card-container {
   perspective: 800px;
   position: relative;
+  padding: 10px;
 }
 
-.card-front, .card-back {
+.card-front{
   backface-visibility: hidden;
   position: absolute;
   top: 0;
   left: 0;
   transition: transform 0.8s;
+  background-color: orange
+}
+
+.card-back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.8s;
+  background-color: red
 }
 
 .card-back { /* Initially hide the back side */

@@ -10,6 +10,15 @@ import { LoginComponent } from './login/login.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
+import { HttpClientModule } from '@angular/common/http';
+import { HeaderModule } from '@coreui/angular';
+import '@angular/compiler';
+import {
+  NavModule,
+  NavbarModule,
+  DropdownModule,
+  // ContainerComponent,
+} from '@coreui/angular';
 
 @NgModule({
   declarations: [
@@ -25,6 +34,12 @@ import { MatCardModule } from '@angular/material/card';
     MatSlideToggleModule,
     MatCardModule,
     MatButtonModule,
+    HttpClientModule,
+    HeaderModule,
+    NavModule,
+    NavbarModule,
+    DropdownModule,
+    // ContainerComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],
