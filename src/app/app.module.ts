@@ -19,6 +19,7 @@ import {
   DropdownModule,
   // ContainerComponent,
 } from '@coreui/angular';
+import { AngularEventsComponent } from './angular-events/angular-events.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import {
     MainComponent,
     CardComponent,
     LoginComponent,
+    AngularEventsComponent,
   ],
   imports: [
     BrowserModule,
