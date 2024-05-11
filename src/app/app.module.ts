@@ -20,6 +20,7 @@ import {
   // ContainerComponent,
 } from '@coreui/angular';
 import { AngularEventsComponent } from './angular-events/angular-events.component';
+import { AngularFormsComponent } from './angular-forms/angular-forms.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { AngularEventsComponent } from './angular-events/angular-events.componen
     CardComponent,
     LoginComponent,
     AngularEventsComponent,
+    AngularFormsComponent,
   ],
   imports: [
     BrowserModule,

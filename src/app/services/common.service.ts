@@ -9,7 +9,7 @@ export class CommonService {
 
   getAllFlashCards() {
     const token =
-      'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6OTA5MDg4LCJpYXQiOjE3MTM5NzAxOTIsImV4cCI6MTcxNDA1NjU5Mn0.kmRjkx6jQrafky23UPtdODiEtS-XIYinx1X0-G88M8w';
+      'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6OTA5MDg4LCJpYXQiOjE3MTUwMTIxNDIsImV4cCI6MTcxNTA5ODU0Mn0.mNuphryfEJnRljTd08OgL06HfKTXi0z4IYr5f9OrNKQ';
     const headers = new HttpHeaders({ Authorization: `${token}` });
 
     return this.http.get('http://localhost:2099/flash_card/card_by_username', {
