@@ -1,1 +1,5 @@
-<p>angular-forms works!</p>
+<form #ggform="ngForm" (ngSubmit) ="getData(ggform.value)">
+    <input type="input" name="username", placeholder="Please enter user name">
+    <input type="input" name="email", placeholder="Please enter user email">
+    <input type="input" name="password", placeholder="Please enter user password">
+</form>
