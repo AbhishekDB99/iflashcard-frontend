@@ -1,0 +1,33 @@
+<form #ggform="ngForm" (submit)="getData(ggform.value)">
+  <input
+    type="input"
+    ngModel
+    name="name"
+    placeholder="Please enter user name"
+  /><br /><br />
+  <input
+    type="text"
+    name="email"
+    ngModel
+    placeholder="Please enter user email"
+  /><br /><br />
+  <input
+    type="input"
+    name="password"
+    ngModel
+    placeholder="Please enter user password"
+  /><br /><br />
+  <button>Submit</button>
+</form>
+
+<p class="main-text">Data using ul & li</p>
+
+<ul class="main-text">
+  <li>Name: {{ data?.name }}</li>
+  <li>Email: {{ data?.email }}</li>
+  <li>Password: {{ data?.password }}</li>
+</ul>
+
+<p class="main-text">Data using json pipe</p>
+
+<p class="main-text">Form value : {{ data | json }}</p>

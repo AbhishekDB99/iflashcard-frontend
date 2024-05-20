@@ -20,6 +20,8 @@ import {
   // ContainerComponent,
 } from '@coreui/angular';
 import { AngularEventsComponent } from './angular-events/angular-events.component';
+import { FormsModule } from '@angular/forms';
+import { AngularFormsComponent } from './angular-forms/angular-forms.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,7 @@ import { AngularEventsComponent } from './angular-events/angular-events.componen
     CardComponent,
     LoginComponent,
     AngularEventsComponent,
+    AngularFormsComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,9 +44,10 @@ import { AngularEventsComponent } from './angular-events/angular-events.componen
     NavModule,
     NavbarModule,
     DropdownModule,
-    // ContainerComponent,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
+  exports: [FormsModule],
 })
 export class AppModule {}
