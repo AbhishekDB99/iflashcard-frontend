@@ -4,17 +4,15 @@ import { NgForm } from '@angular/forms';
 @Component({
   selector: 'app-angular-forms',
   templateUrl: './angular-forms.component.html',
-  styleUrls: ['./angular-forms.component.css']
+  styleUrls: ['./angular-forms.component.css'],
 })
 export class AngularFormsComponent implements OnInit {
-  data:any
+  data: any;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-
-  }
-  getData(formData:NgForm){
-      this.data = formData
+  ngOnInit(): void {}
+  getData(formData: NgForm) {
+    this.data = formData;
   }
 }

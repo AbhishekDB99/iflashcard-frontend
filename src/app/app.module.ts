@@ -20,7 +20,7 @@ import {
   // ContainerComponent,
 } from '@coreui/angular';
 import { AngularEventsComponent } from './angular-events/angular-events.component';
-import { FormModule } from '@coreui/angular';
+import { FormsModule } from '@angular/forms';
 import { AngularFormsComponent } from './angular-forms/angular-forms.component';
 
 @NgModule({
@@ -31,7 +31,7 @@ import { AngularFormsComponent } from './angular-forms/angular-forms.component';
     CardComponent,
     LoginComponent,
     AngularEventsComponent,
-    AngularFormsComponent
+    AngularFormsComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,10 +44,10 @@ import { AngularFormsComponent } from './angular-forms/angular-forms.component';
     NavModule,
     NavbarModule,
     DropdownModule,
-    FormModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
-  exports:[FormModule]
+  exports: [FormsModule],
 })
 export class AppModule {}
