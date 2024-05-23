@@ -1,0 +1,7 @@
+<h2 class="main-text">child works!</h2>
+<p class="main-text">Data receive from parent component: {{ parentData }}</p>
+<p class="main-text">Second data receive from parent component:</p>
+<ul class="main-text" *ngFor="let item of parentArray">
+  <li>{{ item.name }}</li>
+  <li>{{ item.email }}</li>
+</ul>

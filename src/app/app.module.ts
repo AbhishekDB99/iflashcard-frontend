@@ -22,6 +22,7 @@ import {
 import { AngularEventsComponent } from './angular-events/angular-events.component';
 import { FormsModule } from '@angular/forms';
 import { AngularFormsComponent } from './angular-forms/angular-forms.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { AngularFormsComponent } from './angular-forms/angular-forms.component';
     LoginComponent,
     AngularEventsComponent,
     AngularFormsComponent,
+    ChildComponent,
   ],
   imports: [
     BrowserModule,
