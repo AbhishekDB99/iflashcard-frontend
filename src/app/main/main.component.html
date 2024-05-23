@@ -1,7 +1,9 @@
 <section style="background-color: #282c34">
-  <p class="main-text">main works!</p>
+  <p class="main-text">main start!</p>
   <!-- <app-card></app-card> -->
   <!-- <app-angular-events></app-angular-events> -->
-  <app-angular-forms></app-angular-forms>
-  <p class="main-text">main works!</p>
+  <!-- <app-angular-forms></app-angular-forms> -->
+  <app-child [parentData]="data" [parentArray]="userDetails"></app-child>
+  <button (click)="generateValue()">Generate data for child component</button>
+  <p class="main-text">main end!</p>
 </section>
