@@ -5,3 +5,11 @@
   <li>{{ item.name }}</li>
   <li>{{ item.email }}</li>
 </ul>
+
+<input type="text" #inputEvent />
+<button (click)="childComponentEvent.emit(inputEvent.value)">
+  Send data to Parent</button
+><br /><br />
+
+<input type="text" #inputEvent2 />
+<button (click)="emitFunction(inputEvent2.value)">Send data to Parent</button>

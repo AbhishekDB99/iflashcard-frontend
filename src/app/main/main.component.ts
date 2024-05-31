@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
   data: any = 'Not yet from parent';
+  childComponentData: any = '';
+  childComponentData2: any = '';
   userDetails = [
     { name: 'user1', email: 'user1@test.com' },
     { name: 'user2', email: 'user2@test.com' },
@@ -19,5 +21,13 @@ export class MainComponent implements OnInit {
   ngOnInit(): void {}
   generateValue() {
     this.data = Math.floor(Math.random() * 10);
+  }
+
+  getEventFromChildComponent(data: any) {
+    this.childComponentData = data;
+  }
+
+  getEventFromChildComponentWithoutFunc(data: any) {
+    this.childComponentData2 = data;
   }
 }

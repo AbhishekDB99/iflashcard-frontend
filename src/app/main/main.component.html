@@ -3,7 +3,23 @@
   <!-- <app-card></app-card> -->
   <!-- <app-angular-events></app-angular-events> -->
   <!-- <app-angular-forms></app-angular-forms> -->
-  <app-child [parentData]="data" [parentArray]="userDetails"></app-child>
-  <button (click)="generateValue()">Generate data for child component</button>
+  <app-child
+    [parentData]="data"
+    [parentArray]="userDetails"
+    (childComponentEvent)="getEventFromChildComponent($event)"
+    (getEventFromChildComponentWithoutFunc)="
+      getEventFromChildComponentWithoutFunc($event)
+    "
+  ></app-child
+  ><br />
+  <p class="main-text">
+    Data received from child component using function: {{ childComponentData }}
+  </p>
+  <p class="main-text">
+    Data received from child component without using function:
+    {{ childComponentData2 }}
+  </p>
+  <button (click)="generateValue()">Generate data for child component</button
+  ><br />
   <p class="main-text">main end!</p>
 </section>
