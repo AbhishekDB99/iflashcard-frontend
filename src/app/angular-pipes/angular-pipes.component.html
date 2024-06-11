@@ -1,0 +1,22 @@
+<p>
+  Without uppercase pipe:{{ upperCaseText }}, with uppercase pipe:{{
+    upperCaseText | uppercase
+  }}
+</p>
+<p>
+  Without lower pipe:{{ lowerCaseText }}, with lowercase pipe:{{
+    lowerCaseText | lowercase
+  }}
+</p>
+
+<p>Date w/o using pipe: {{ today }}</p>
+
+<p>Date using pipe: {{ today | date }}</p>
+
+<p>Upper case text after slice : {{ upperCaseText | slice : 3 : 12 }}</p>
+
+<p>JSON w/o pipe : {{ jsonObject }}</p>
+
+<p>JSON w pipe : {{ jsonObject | json }}</p>
+
+<p>Custom Pipe : {{ 30 | usdInr : 80 : 0.101 }}</p>

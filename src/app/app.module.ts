@@ -23,6 +23,8 @@ import { AngularEventsComponent } from './angular-events/angular-events.componen
 import { FormsModule } from '@angular/forms';
 import { AngularFormsComponent } from './angular-forms/angular-forms.component';
 import { ChildComponent } from './child/child.component';
+import { AngularPipesComponent } from './angular-pipes/angular-pipes.component';
+import { UsdInrPipe } from './pipes/usd-inr.pipe';
 
 @NgModule({
   declarations: [
@@ -34,6 +36,8 @@ import { ChildComponent } from './child/child.component';
     AngularEventsComponent,
     AngularFormsComponent,
     ChildComponent,
+    AngularPipesComponent,
+    UsdInrPipe,
   ],
   imports: [
     BrowserModule,
