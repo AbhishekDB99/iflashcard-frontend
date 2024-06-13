@@ -25,6 +25,7 @@ import { AngularFormsComponent } from './angular-forms/angular-forms.component';
 import { ChildComponent } from './child/child.component';
 import { AngularPipesComponent } from './angular-pipes/angular-pipes.component';
 import { UsdInrPipe } from './pipes/usd-inr.pipe';
+import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { UsdInrPipe } from './pipes/usd-inr.pipe';
     ChildComponent,
     AngularPipesComponent,
     UsdInrPipe,
+    TemplateDrivenFormComponent,
   ],
   imports: [
     BrowserModule,

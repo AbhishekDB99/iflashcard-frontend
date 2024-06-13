@@ -1,0 +1,10 @@
+<form #testForm="ngForm" (ngSubmit)="submitForm(testForm.value)">
+  <input type="input" name="username" placeholder="Enter username" ngModel />
+  <br /><br />
+  <input type="email" name="email" placeholder="Enter email" ngModel />
+  <br /><br />
+
+  <button>Submit</button>
+</form>
+
+<button (click)="submitForm(testForm.value)">Outside Form</button>
