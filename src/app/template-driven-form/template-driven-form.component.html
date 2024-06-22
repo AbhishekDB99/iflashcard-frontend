@@ -1,10 +1,34 @@
 <form #testForm="ngForm" (ngSubmit)="submitForm(testForm.value)">
-  <input type="input" name="username" placeholder="Enter username" ngModel />
-  <br /><br />
-  <input type="email" name="email" placeholder="Enter email" ngModel />
-  <br /><br />
+  <input
+    type="input"
+    name="username"
+    #usernameModel="ngModel"
+    placeholder="Enter username"
+    ngModel
+    required
+  />
+  <br />
+  <span
+    class="warningText"
+    *ngIf="usernameModel.invalid && usernameModel.touched"
+    >Please enter a valid username!!!</span
+  >
+  <br />
+  <input
+    type="email"
+    name="email"
+    placeholder="Enter email"
+    ngModel
+    #emailModel="ngModel"
+    required
+  />
+  <br />
+  <span class="warningText" *ngIf="emailModel.invalid && emailModel.touched"
+    >Please enter a valid email!!!</span
+  >
+  <br />
 
-  <button>Submit</button>
+  <button [disabled]="testForm.invalid">Submit</button>
 </form>
 
-<button (click)="submitForm(testForm.value)">Outside Form</button>
+<!-- <button (click)="submitForm(testForm.value)">Outside Form</button> -->
