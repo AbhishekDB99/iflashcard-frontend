@@ -26,6 +26,8 @@ import { ChildComponent } from './child/child.component';
 import { AngularPipesComponent } from './angular-pipes/angular-pipes.component';
 import { UsdInrPipe } from './pipes/usd-inr.pipe';
 import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -40,6 +42,7 @@ import { TemplateDrivenFormComponent } from './template-driven-form/template-dri
     AngularPipesComponent,
     UsdInrPipe,
     TemplateDrivenFormComponent,
+    ReactiveFormComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,6 +56,7 @@ import { TemplateDrivenFormComponent } from './template-driven-form/template-dri
     NavbarModule,
     DropdownModule,
     FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
