@@ -4,12 +4,35 @@
     name="username"
     placeholder="Enter username"
     formControlName="user"
-  /><br /><br />
+  /><br />
+  <span class="warningText" *ngIf="user && user.invalid && user.touched"
+    >Invalid username!!!</span
+  >
+  <br />
+  <br />
   <input
     type="password"
     name="password"
     placeholder="Enter password"
     formControlName="password"
-  /><br /><br />
-  <button>Login</button>
+  /><br />
+  <span
+    class="warningText"
+    *ngIf="password && password.invalid && password.touched"
+    >Invalid password!!!</span
+  >
+  <br />
+  <br />
+  <input
+    type="email"
+    name="email"
+    placeholder="Enter email"
+    formControlName="email"
+  />
+  <br />
+  <span class="warningText" *ngIf="email && email.invalid && email.touched">
+    Invalid email!!!</span
+  >
+  <br />
+  <button [disabled]="loginForm.invalid">Login</button>
 </form>
