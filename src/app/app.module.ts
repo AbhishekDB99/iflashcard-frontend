@@ -28,6 +28,11 @@ import { UsdInrPipe } from './pipes/usd-inr.pipe';
 import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HomeComponent } from './home/home.component';
+import { FeatureComponent } from './feature/feature.component';
+import { PricingComponent } from './pricing/pricing.component';
+import { TestChildRouterComponent } from './test-child-router/test-child-router.component';
+import { WildPageComponent } from './wild-page/wild-page.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +48,11 @@ import { ReactiveFormsModule } from '@angular/forms';
     UsdInrPipe,
     TemplateDrivenFormComponent,
     ReactiveFormComponent,
+    HomeComponent,
+    FeatureComponent,
+    PricingComponent,
+    TestChildRouterComponent,
+    WildPageComponent,
   ],
   imports: [
     BrowserModule,
