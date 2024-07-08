@@ -32,6 +32,7 @@ import { HomeComponent } from './home/home.component';
 import { FeatureComponent } from './feature/feature.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { TestChildRouterComponent } from './test-child-router/test-child-router.component';
+import { WildPageComponent } from './wild-page/wild-page.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { TestChildRouterComponent } from './test-child-router/test-child-router.
     FeatureComponent,
     PricingComponent,
     TestChildRouterComponent,
+    WildPageComponent,
   ],
   imports: [
     BrowserModule,

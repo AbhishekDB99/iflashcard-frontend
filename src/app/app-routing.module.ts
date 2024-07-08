@@ -5,6 +5,7 @@ import { PricingComponent } from './pricing/pricing.component';
 import { FeatureComponent } from './feature/feature.component';
 import { MainComponent } from './main/main.component';
 import { TestChildRouterComponent } from './test-child-router/test-child-router.component';
+import { WildPageComponent } from './wild-page/wild-page.component';
 
 const routes: Routes = [
   {
@@ -28,6 +29,10 @@ const routes: Routes = [
   {
     path:'',
     component:MainComponent
+  },
+  {
+    path:'**',
+    component:WildPageComponent
   }
 ];
 
